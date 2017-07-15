@@ -11,8 +11,11 @@
                                   [org.clojure/tools.nrepl "0.2.12"]
                                   [figwheel-sidecar "0.5.11"]]
                    :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}}}
-  :plugins [[lein-cljsbuild "1.1.6"]]
+  :plugins [[lein-cljsbuild "1.1.6"]
+            [lein-npm "0.6.2"]]
   :clean-targets ^{:protect false} ["target"]
+  :npm {:dependencies [[source-map-support "*"]
+                       [ws "*"]]}
   :cljsbuild {:builds [{:id "server-dev"
                         :source-paths ["src"]
                         :figwheel true

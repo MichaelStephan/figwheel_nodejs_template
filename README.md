@@ -12,9 +12,9 @@ Usage
 
 ### Initial
 ```
-./bootstrap.sh
+lein npm install
 ```
-Normally you need to run this command only once as it sets up your clojurescript/ nodejs environment.
+Normally you need to run this command only once you set up your clojurescript/ nodejs environment or whenever you change the nodejs dependencies.
 
 ### from cmd-line
 ```
